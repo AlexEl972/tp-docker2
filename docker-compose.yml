@@ -1,0 +1,9 @@
+services:
+    web:
+image: nginx
+expose:
+- "90"
+volumes:
+- ./code:/usr/share/nginx/html
+ports:
+- 80:90
